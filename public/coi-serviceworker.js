@@ -1,13 +1,9 @@
-// Service Worker for Cross-Origin Isolation support
+// Cross-Origin Isolation Support
 
-self.addEventListener('install', function(event) {
-  console.log('Service Worker: Installed');
-});
+if (self.crossOriginIsolated) {
+    console.log('This environment is cross-origin isolated.');
+} else {
+    console.error('This environment is NOT cross-origin isolated. SharedArrayBuffer support cannot be guaranteed.');
+}
 
-self.addEventListener('activate', function(event) {
-  console.log('Service Worker: Activated');
-});
-
-self.addEventListener('fetch', function(event) {
-  console.log('Service Worker: Fetching', event.request.url);
-});
+// Additional Service Worker logic can be implemented below.
