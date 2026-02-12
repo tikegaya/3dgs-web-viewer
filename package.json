@@ -1,0 +1,1 @@
+{\n  "name": "3dgs-web-viewer",\n  "version": "1.0.0",\n  "dependencies": {\n    "three": "^0.178.0",\n    "spark-renderer": "latest",\n    "vite": "latest",\n    "three-orbitcontrols": "latest"\n  }\n}
