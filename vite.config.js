@@ -3,8 +3,9 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   server: {
     headers: {
+      'Cross-Origin-Embedder-Policy': 'require-corp',
       'Cross-Origin-Opener-Policy': 'same-origin',
-      'Cross-Origin-Embedder-Policy': 'require-corp'
-    }
-  }
+    },
+  },
+  base: './', // GitHub Pagesでの相対パス切れ防止
 });
