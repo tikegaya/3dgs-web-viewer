@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/3dgs-web-viewer/',
+  base: '/',
   server: {
     headers: {
       'Cross-Origin-Embedder-Policy': 'require-corp',
@@ -9,6 +9,7 @@ export default defineConfig({
     }
   },
   build: {
+    outDir: 'docs',
     target: 'esnext'
   }
 });
