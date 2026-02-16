@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/',
+  base: '/3dgs-web-viewer/',
   server: {
     headers: {
       'Cross-Origin-Embedder-Policy': 'require-corp',
