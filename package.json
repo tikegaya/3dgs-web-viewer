@@ -6,11 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-qr": "node scripts/generate-qr.mjs"
   },
   "dependencies": {
-    "three": "^0.173.0",
-    "@sparkjsdev/spark": "latest"
+    "qrcode": "^1.5.4",
+    "three": "^0.178.0"
   },
   "devDependencies": {
     "vite": "^5.0.0"
