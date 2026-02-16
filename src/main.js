@@ -33,7 +33,7 @@ async function main() {
     try {
         console.log('🚀 Sparkエンジンの初期化を開始...');
         
-        const splatURL = '/assets/splats/Taranis2_1.sog';
+        const splatURL = import.meta.env.BASE_URL + 'assets/splats/Taranis2_1.sog';
         const splatMesh = new SplatMesh({ 
             url: splatURL,
             shDegree: 3  // SH係数を有効化（度数3 = より詳細な視点依存色）
